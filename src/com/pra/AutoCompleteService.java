@@ -29,7 +29,7 @@ public class AutoCompleteService {
 	   StringBuffer result = new StringBuffer("");
 	  String s1 = start.toUpperCase();
 	   try{List<Cities> citiesList = cityDao.loadAllcities(s1,to);
-	        if(citiesList.size()==0);
+	        if(citiesList.size()==0)
 	        result.append("No Record");
 	        for(Cities city:citiesList){
 	           result.append(city.getCity());
